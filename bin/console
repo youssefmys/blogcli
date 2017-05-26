@@ -1,5 +1,10 @@
 #!/usr/bin/env  ruby
 
+
+#change directory to the directory of current file to avoid require problems
+
+Dir.chdir(File.expand_path(File.dirname(__FILE__)))
+
 require_relative '../config/environment.rb'
 require_relative '../lib/blog_cli.rb'
 require 'irb'
@@ -7,3 +12,6 @@ require 'irb'
 
 
 IRB.start
+
+#BlogCLI::Cli.new.call
+

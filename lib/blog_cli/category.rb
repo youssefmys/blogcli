@@ -1,5 +1,3 @@
-class BlogCLI
-  class Category < ActiveRecord::Base
+class BlogCLI::Category < ActiveRecord::Base
     has_many :posts
-  end
 end
